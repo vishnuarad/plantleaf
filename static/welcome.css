@@ -1,0 +1,80 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Background color for a futuristic look */
+    color: #fff; /* Text color */
+    text-align: center;
+    overflow: hidden; /* Hide horizontal overflow */
+  }
+  
+  /* Welcome container styles */
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('background2.jpg'); /* Add your background image path */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    perspective: 1000px; /* Perspective for 3D effect */
+  }
+  
+  .welcome-container:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Welcome content styles */
+  .welcome-content {
+    transform: translateY(50px);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards, moveUp 1s ease-out forwards;
+  }
+  
+  /* Header 1 styles */
+  .welcome-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraph styles */
+  .welcome-container p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  
+  /* Checkout button styles */
+  .checkout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00bcd4; /* Button color */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .checkout-button:hover {
+    background-color: #0097a7; /* Hover color */
+    transform: scale(1.05); /* Button scale on hover */
+  }
+  
+  /* Keyframe animations */
+  @keyframes fadeInUp {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes moveUp {
+    to {
+      transform: translateY(0);
+    }
+  }
+  

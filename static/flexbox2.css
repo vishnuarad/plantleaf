@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  /* Common styles for .contaner1 and .contaner3 */
+  .contaner1,
+  .contaner3 {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  /* Hover effect for .contaner1 and .contaner3 */
+  .contaner1:hover,
+  .contaner3:hover {
+    transform: scale(1.05);
+    background-color: #00bcd4;
+  }
+  
+  /* Styling for images inside containers */
+  .contaner1 .contaner2,
+  .contaner3 .contaner2 {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    animation: zoomIn 0.5s ease-in-out;
+  }
+  
+  /* Icon styles */
+  .contaner1 i,
+  .contaner3 i {
+    font-size: 24px;
+    color: #00bcd4;
+    margin: 10px auto;
+    display: block;
+  }
+  
+  /* Header styles */
+  .contaner1 h1,
+  .contaner3 h1 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Paragraph styles */
+  .contaner1 p,
+  .contaner3 p {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* Button styles */
+  .contaner1 input[type="submit"],
+  .contaner3 input[type="submit"] {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    margin-top: 20px;
+    border-radius: 4px;
+  }
+  
+  /* Button hover effect */
+  .contaner1 input[type="submit"]:hover,
+  .contaner3 input[type="submit"]:hover {
+    background-color: #0097a7;
+    transform: translate3d(0, -5px, 0);
+  }
+  
+  /* Keyframe animation for zooming in */
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  /* Styling for the top bar */
+  .top-bar {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Styling for the search bar */
+  .search-bar {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Styling for the upload button */
+  .upload-icon {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .upload-icon:hover {
+    background-color: #0097a7;
+    transform: translate3d(0, -5px, 0);
+  }
+  
+  /* Styling for the file input (hidden) */
+  #fileInput {
+    display: none;
+  }

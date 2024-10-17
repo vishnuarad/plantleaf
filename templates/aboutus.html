@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Swachhatha</title>
+
+</head>
+
+<style>
+    /* Reset default margin and padding */
+    body, h1, h2, p, ul, li {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header styling */
+    header {
+        background-color: #78a979; /* Green header background color */
+        text-align: center;
+        padding: 20px 0;
+        color: white;
+        animation: slideInDown 1s;
+    }
+
+    header h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        animation: bounceInLeft 1s;
+    }
+
+    /* About content styling */
+    .about-content {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('static\\background-image.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        max-width: 800px;
+        margin: 20px auto;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        animation: zoomIn 1s;
+    }
+
+    .about-content h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #78a979; /* Green header text color */
+    }
+
+    .about-content p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .about-content ul {
+        list-style: disc;
+        margin-left: 20px;
+    }
+
+    /* Features section styling */
+    .features {
+        padding: 40px 0;
+        text-align: center;
+        animation: fadeIn 1s;
+    }
+
+    .features h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #78a979; /* Green header text color */
+    }
+
+    .feature-box {
+        display: inline-block;
+        margin: 0 20px;
+        animation: rotateInDownLeft 1s;
+    }
+
+    .feature-icon {
+        font-size: 48px;
+        color: #78a979; /* Green feature icon color */
+        margin-bottom: 10px;
+    }
+
+    /* Footer styling */
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #333;
+        color: white;
+        animation: fadeIn 1s;
+    }
+
+    /* Set gradient background image for body */
+    body {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('static\\background-image.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        animation: backgroundAnimation 20s infinite alternate, fadeIn 1s;
+    }
+
+    @keyframes backgroundAnimation {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(1.05);
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>About us</h1>
+        </header>
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>We are a team of machine learning enthusiasts dedicated to providing innovative solutions. Our mission is to make machine learning accessible to everyone.</p>
+            <p>Our services include:</p>
+            <ul>
+                <li>Data Analysis</li>
+                <li>Model Training</li>
+                <li>Predictive Analytics</li>
+            </ul>
+        </div>
+        <div class="features">
+            <h2>Key Features</h2>
+            <div class="feature-box">
+                <span class="feature-icon">&#x2713;</span>
+                <p>Advanced Machine Learning</p>
+            </div>
+            <div class="feature-box">
+                <span class="feature-icon">&#x2713;</span>
+                <p>Data Analysis Tools</p>
+            </div>
+            <div class="feature-box">
+                <span class="feature-icon">&#x2713;</span>
+                <p>Predictive Analytics</p>
+            </div>
+        </div>
+        <footer>
+            &copy; 2023 ML App
+        </footer>
+    </div>
+</body>
+
+</html>

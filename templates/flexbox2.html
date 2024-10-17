@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swachhatha</title>
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-QJcDXhgsRG5fYlkqQFXi4AqYdaxF+MVKK9+BUQ5brSB5pyFw+2zFvCRqcjPQTIoRwH0tAzrE2j7TsRXh4mVz9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Include your custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='flexbox2.css') }}">
+</head>
+<body>
+    <div class="top-bar">
+        <input type="text" id="searchBar" class="search-bar" placeholder="Search">
+        <a href="/website" class="upload-icon">upload</a>
+        <input type="file" id="fileInput" style="display: none;" accept="image/*">
+    </div>
+    
+   <div class="flexbox1">
+    <div class="contaner1">
+        <i class="fas fa-camera fa-2x"></i> <!-- Camera icon -->
+        <img src="{{ url_for('static', filename='nature.jpeg') }}" alt="" class="contaner2">
+        <h1 style="font-size:80px;">SWACHHATHA</h1>
+        <p></p>
+        <p><a href="/aboutus"><input type="submit" value="About Us"></a></p>
+    </div>
+
+    <div class="contaner1"> 
+        <i class="fas fa-camera fa-2x"></i> <!-- Camera icon -->
+        <img src="{{ url_for('static', filename='medical.jpg') }}" alt="" class="contaner2">
+        <h1>Medicinal plants</h1>
+        <p>Medical plants, often reffered to as medicinal herds, have been used for centuried to treat various physical and mental health conditions and promote over all well being through their  natural healing properties.</p>
+        <input type="submit" value="Here's how">
+    </div>
+    <div class="contaner1">
+        <i class="fas fa-camera fa-2x"></i> <!-- Camera icon -->
+        <img src="{{ url_for('static', filename='handleaf.jpg') }}" alt="" class="contaner2">
+        <h1>Most Popular Medicinal Plants</h1>
+        <p>There are many medicinal plants but yet some excel out of them and known commonly .</p>
+        <input type="submit" value="Read more">
+    </div>
+    </div>
+   
+    </div>
+      <!-- JavaScript to handle image upload -->
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const uploadedImage = document.getElementById('uploadedImage');
+
+        fileInput.addEventListener('change', function () {
+            const file = fileInput.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    uploadedImage.src = e.target.result;
+                    uploadedImage.style.display = 'block';
+                };
+
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>
